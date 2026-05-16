@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
           <div className="max-w-3xl flex-1">
             {/* Logo Pill */}
             <div className="bg-white text-black px-8 py-3 rounded-full inline-flex items-center gap-3 mb-16 font-bold text-xl shadow-[0_0_20px_rgba(255,255,255,0.2)]">
-               <span>Pixelgram.</span>
+               <img src="/logo.png" alt="Pixelgram Logo" className="h-8 w-auto" />
             </div>
 
             {/* Headline */}
@@ -33,17 +33,6 @@ export const Footer: React.FC = () => {
             </h2>
           </div>
 
-          {/* Right Image Card - Floating Yellow Card */}
-          <div className="relative shrink-0 w-full lg:w-auto flex justify-center lg:justify-end">
-             <div className="w-72 h-72 bg-seerakku-yellow rounded-[2.5rem] p-8 flex items-center justify-center transform -rotate-6 hover:rotate-0 transition-transform duration-500 relative z-10 shadow-2xl">
-                {/* Pixelgram Brand Logo */}
-                <img 
-                  src="/logo.svg" 
-                  alt="Pixelgram Brand Logo" 
-                  className="w-full h-full object-cover rounded-[1.5rem] shadow-sm"
-                />
-             </div>
-          </div>
         </div>
 
         {/* Divider */}
@@ -119,7 +108,7 @@ export const Footer: React.FC = () => {
            {/* Scroll Top Button */}
            <button 
              onClick={scrollToTop}
-             className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-black hover:bg-seerakku-yellow hover:scale-110 transition-all duration-300 shadow-lg"
+             className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-black hover:bg-seerakku-yellow hover:text-white hover:scale-110 transition-all duration-300 shadow-lg"
            >
              <ArrowUp className="w-5 h-5" />
            </button>

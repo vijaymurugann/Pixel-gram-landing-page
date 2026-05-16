@@ -36,7 +36,7 @@ export const Programs: React.FC = () => {
   }, []);
 
   return (
-    <div id="programs" ref={containerRef} className="bg-white py-20 px-6 md:px-12 lg:px-20 text-seerakku-black border-t border-gray-100">
+    <div ref={containerRef} className="bg-white py-20 px-6 md:px-12 lg:px-20 text-seerakku-black border-t border-gray-100">
        {/* Section Header */}
        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-8">
         <div className="flex items-center gap-4">
@@ -77,7 +77,7 @@ export const Programs: React.FC = () => {
                 </p>
              </div>
              <button className="w-14 h-14 bg-white rounded-full flex items-center justify-center group-hover:bg-seerakku-yellow transition-colors shadow-lg shrink-0 ml-4">
-               <ArrowUpRight className="w-6 h-6 text-black" />
+               <ArrowUpRight className="w-6 h-6 text-black group-hover:text-white transition-colors" />
              </button>
            </div>
         </div>
@@ -139,7 +139,7 @@ export const Programs: React.FC = () => {
                We've removed the friction so you know exactly what to expect. Go from camera roll to coffee table with zero stress and complete confidence.
              </p>
              <div className="flex shrink-0">
-                <button className="px-8 py-4 rounded-full bg-black text-white font-semibold flex items-center justify-center hover:bg-seerakku-yellow hover:text-black transition-colors shadow-lg group text-sm uppercase tracking-wide">
+                <button className="px-8 py-4 rounded-full bg-black text-white font-semibold flex items-center justify-center hover:bg-seerakku-yellow hover:text-white transition-colors shadow-lg group text-sm uppercase tracking-wide">
                   Start Your Book
                   <ArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" />
                 </button>

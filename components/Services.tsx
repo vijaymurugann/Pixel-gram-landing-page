@@ -40,11 +40,11 @@ export const Services: React.FC = () => {
   };
 
   return (
-    <div id="inspiration" className="bg-white py-20 px-6 md:px-12 lg:px-20 text-neutral-900 border-t border-gray-100">
+    <div className="bg-white py-20 px-6 md:px-12 lg:px-20 text-neutral-900 border-t border-gray-100">
       
       {/* Top Header Row for Mobile */}
       <div className="flex items-center gap-4 mb-12 md:mb-20">
-          <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-yellow-400 font-bold text-lg shadow-lg shrink-0">
+          <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-seerakku-yellow font-bold text-lg shadow-lg shrink-0">
             02
           </div>
           <div className="px-6 py-2 bg-gray-100 rounded-full text-sm font-semibold uppercase tracking-wider text-neutral-600">
@@ -59,7 +59,7 @@ export const Services: React.FC = () => {
            <div className="mb-10">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight mb-6 text-neutral-900 leading-[1.1]">
                 Creating Made <br/>
-                <span className="italic text-yellow-500 font-bold">Effortless</span>
+                <span className="italic text-seerakku-yellow font-bold">Effortless</span>
               </h2>
               <p className="text-gray-500 text-lg leading-relaxed max-w-md">
                 We remove the fear that creating a photobook will be a frustrating, time-consuming chore. Our smart features reassure you that the process is fast, easy, and high-quality, with zero learning curve and no need for 100+ complicated tools.
@@ -93,7 +93,7 @@ export const Services: React.FC = () => {
                     onClick={() => handleToggle(item.id)}
                   >
                      <div className="flex items-center gap-3 md:gap-6">
-                        <span className={`font-medium text-lg transition-colors ${isActive ? 'text-gray-400 mt-1' : 'text-gray-300 group-hover:text-yellow-500'}`}>
+                        <span className={`font-medium text-lg transition-colors ${isActive ? 'text-gray-400 mt-1' : 'text-gray-300 group-hover:text-seerakku-yellow'}`}>
                            {item.id}.
                         </span>
                         <h3 className={`font-medium text-neutral-900 tracking-tight transition-all duration-300 ${isActive ? 'text-3xl md:text-4xl' : 'text-xl md:text-2xl font-light text-neutral-800 group-hover:translate-x-2'}`}>
@@ -103,8 +103,8 @@ export const Services: React.FC = () => {
                      
                      {/* Arrow Icon for Collapsed State */}
                      {!isActive && (
-                        <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-yellow-400 transition-colors shrink-0">
-                           <ArrowRight className="w-4 h-4 text-black -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
+                        <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-seerakku-yellow transition-colors shrink-0">
+                           <ArrowRight className="w-4 h-4 text-black group-hover:text-white -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
                         </div>
                      )}
                   </div>
@@ -135,7 +135,7 @@ export const Services: React.FC = () => {
            
            {/* Bottom Action Button */}
            <div className="pt-10 flex justify-end">
-              <button className="flex items-center gap-3 bg-black text-white px-8 py-3 rounded-full hover:bg-yellow-500 hover:text-black transition-colors group shadow-xl">
+              <button className="flex items-center gap-3 bg-black text-white px-8 py-3 rounded-full hover:bg-seerakku-yellow hover:text-white transition-colors group shadow-xl">
                  <span className="font-medium">Start Creating</span>
                  <div className="bg-white rounded-full p-1 group-hover:bg-white/90">
                      <ArrowUpRight className="w-3 h-3 text-black" />
