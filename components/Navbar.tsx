@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { useNavTheme } from '../context/NavContext';
 
 export const Navbar: React.FC = () => {
@@ -10,10 +10,10 @@ export const Navbar: React.FC = () => {
   const { navTheme } = useNavTheme();
   
   const navLinks = [
-    { label: 'Home', href: '#' },
-    { label: 'Projects', href: '#programs' }, // Changed from Programs to Projects for Nature theme
-    { label: 'Impact', href: '#' },
-    { label: 'Gallery', href: '#' },
+    { label: 'Home', href: '#home' },
+    { label: 'How it works', href: '#programs' },
+    { label: 'FAQ', href: '#faq' },
+    { label: 'Contact', href: '#contact' },
   ];
 
   useEffect(() => {
@@ -54,11 +54,8 @@ export const Navbar: React.FC = () => {
       }`}
     >
       {/* Logo */}
-      <div className="pointer-events-auto bg-seerakku-yellow px-4 py-3 rounded-full flex items-center gap-2 shadow-lg  transition-transform cursor-pointer">
-               <div className="p-[2px] rounded-full bg-white">
-            <img src="/logo.svg" alt="Logo" className="w-6 h-6" />
-         </div>
-         <span className="text-black font-bold text-lg tracking-tight">Pixelgram.</span>
+      <div className="pointer-events-auto bg-white px-4 py-3 rounded-full shadow-lg transition-transform cursor-pointer">
+        <img src="/logo.png" alt="Pixelgram Logo" className="h-6 md:h-7 w-auto" />
       </div>
 
       {/* Centered Nav Links - Hidden on small mobile */}
@@ -80,20 +77,12 @@ export const Navbar: React.FC = () => {
 
       {/* Right Side Actions */}
       <div className="flex items-center gap-3 pointer-events-auto">
-        <button className={`w-12 h-12 rounded-full flex items-center justify-center transition-colors shadow-lg group ${
-             isDark ? 'bg-white hover:bg-gray-100' : 'bg-black hover:bg-gray-800'
-        }`}>
-          <Search className={`w-5 h-5 transition-transform group-hover:scale-110 ${
-             isDark ? 'text-black' : 'text-white'
-          }`} />
-        </button>
-        
         <button className={`hidden sm:flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all shadow-lg group ${
              isDark ? 'bg-white text-black hover:bg-gray-100' : 'bg-black text-white hover:bg-gray-800'
         }`}>
-          <span>Donate Now</span>
+          <span>Create your photobook</span>
           <div className={`w-6 h-6 rounded-full flex items-center justify-center transition-colors ${
-              isDark ? 'bg-black group-hover:bg-seerakku-yellow' : 'bg-white group-hover:bg-seerakku-yellow'
+              isDark ? 'bg-black group-hover:bg-seerakku-green' : 'bg-white group-hover:bg-seerakku-green'
           }`}>
             <ArrowUpRight className={`w-3 h-3 ${
                isDark ? 'text-white' : 'text-black'
