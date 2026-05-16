@@ -76,7 +76,7 @@ export const About: React.FC = () => {
       <div className="flex items-center justify-center mt-24 md:mt-32 gap-6">
          <div className="h-[1px] w-16 md:w-32 bg-gradient-to-r from-transparent to-neutral-300"></div>
          <div className="p-4 border border-neutral-200 rounded-full bg-white shadow-sm animate-pulse-slow">
-            <img src="/logo.svg" alt="Logo" className="w-12 h-12" />
+            <img src="/favicon.png" alt="Logo" className="w-12 h-12" />
          </div>
          <div className="h-[1px] w-16 md:w-32 bg-gradient-to-l from-transparent to-neutral-300"></div>
       </div>
