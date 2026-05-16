@@ -9,7 +9,7 @@ export const JoinUs: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=2832&auto=format&fit=crop"
-          alt="Join Seerakku Community"
+          alt="Join Pixelgram Community"
           className="w-full h-full object-cover"
         />
         {/* Dark overlay for contrast */}
@@ -34,7 +34,7 @@ export const JoinUs: React.FC = () => {
           Join the team today and start {' '}
           <span className="inline-flex items-center justify-center align-middle mx-1 relative">
              <div className="w-16 h-10 md:w-20 md:h-12 bg-seerakku-yellow rounded-full flex items-center justify-center rotate-[-6deg]">
-                <Sparkles className="w-6 h-6 md:w-8 md:h-8 text-black" />
+                <Sparkles className="w-6 h-6 md:w-8 md:h-8 text-white" />
              </div>
           </span>
           {' '} your journey toward excellence!

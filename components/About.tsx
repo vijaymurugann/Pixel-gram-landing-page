@@ -46,7 +46,7 @@ export const About: React.FC = () => {
         <div className="text-3xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-tight text-neutral-900">
             <span>You have </span>
             <span 
-              className={`inline-flex items-center justify-center align-middle mx-2 px-5 py-2 bg-seerakku-yellow/90 backdrop-blur-sm rounded-full text-base md:text-xl font-bold text-black -rotate-2 hover:rotate-0 transition-transform cursor-default shadow-md border border-yellow-400 ${isVisible ? 'animate-bounce-in' : 'opacity-0'}`}
+              className={`inline-flex items-center justify-center align-middle mx-2 px-5 py-2 bg-seerakku-yellow/90 backdrop-blur-sm rounded-full text-base md:text-xl font-bold text-white -rotate-2 hover:rotate-0 transition-transform cursor-default shadow-md border border-seerakku-yellow ${isVisible ? 'animate-bounce-in' : 'opacity-0'}`}
               style={{ animationDelay: '0ms' }}
             >
                 <Camera className="w-5 h-5 mr-2" />

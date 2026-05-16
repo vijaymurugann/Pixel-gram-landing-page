@@ -16,7 +16,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
           // Using a high-quality, vibrant forest image that aligns with "Nature Learning Forests"
           // Image: A sunlit forest path, symbolizing the journey of restoration
           src="https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Seerakku Nature Conservation Forest"
+          alt="Pixelgram Nature Conservation Forest"
           className="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105"
         />
         {/* Complex gradient overlay to ensure text pops while keeping the image vibrant */}
@@ -48,9 +48,9 @@ We didn't build another photo app. We built photobooks your mother-in-law will c
           {/* CTA Button */}
           <button 
             onClick={onCtaClick}
-            className="group flex items-center gap-4 pl-6 pr-2 py-2 bg-seerakku-yellow hover:bg-yellow-400 rounded-full transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,215,0,0.6)] hover:shadow-[0_0_60px_-10px_rgba(255,215,0,0.8)] border border-white/20"
+            className="group flex items-center gap-4 pl-6 pr-2 py-2 bg-seerakku-yellow hover:bg-seerakku-yellow rounded-full transition-all duration-300 shadow-[0_0_40px_-10px_rgba(201,31,141,0.6)] hover:shadow-[0_0_60px_-10px_rgba(201,31,141,0.8)] border border-white/20"
           >
-            <span className="text-black text-md font-bold tracking-wide">Create your book today</span>
+            <span className="text-white text-md font-bold tracking-wide">Create your book today</span>
             <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center group-hover:rotate-45 transition-transform duration-300">
                <ArrowUpRight className="w-5 h-5 text-seerakku-yellow" />
             </div>

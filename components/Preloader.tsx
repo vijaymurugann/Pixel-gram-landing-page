@@ -81,9 +81,9 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
       className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-seerakku-black text-white"
     >
       <div className="relative overflow-hidden p-4 flex flex-col items-center">
-        <img ref={logoRef} src="/logo.svg" alt="Seerakku Logo" className="w-32 h-32 mb-4 object-contain" />
+        <img ref={logoRef} src="/logo.svg" alt="Pixelgram Logo" className="w-32 h-32 mb-4 object-contain" />
         <h1 ref={textRef} className="text-4xl md:text-6xl font-bold font-sans tracking-tight">
-          <span className="text-seerakku-yellow">Seer</span>akku
+          Pixelgram
         </h1>
       </div>
       

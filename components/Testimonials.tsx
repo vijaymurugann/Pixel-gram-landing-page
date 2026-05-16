@@ -176,7 +176,7 @@ export const Testimonials: React.FC = () => {
             </button>
             <button 
               onClick={nextSlide}
-              className="w-14 h-14 rounded-full bg-black text-white flex items-center justify-center hover:bg-seerakku-yellow hover:text-black transition-colors shadow-lg"
+              className="w-14 h-14 rounded-full bg-black text-white flex items-center justify-center hover:bg-seerakku-yellow hover:text-white transition-colors shadow-lg"
             >
               <ArrowRight className="w-6 h-6" />
             </button>

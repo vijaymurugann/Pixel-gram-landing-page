@@ -77,7 +77,7 @@ export const FAQ: React.FC = () => {
                 onClick={() => toggleFaq(index)}
               >
                 <span className="text-xl font-medium text-neutral-900 pr-8">{faq.question}</span>
-                <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 transition-colors duration-300 ${openIndex === index ? 'bg-seerakku-yellow text-black' : 'bg-gray-100 text-gray-500'}`}>
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 transition-colors duration-300 ${openIndex === index ? 'bg-seerakku-yellow text-white' : 'bg-gray-100 text-gray-500'}`}>
                   {openIndex === index ? <Minus className="w-5 h-5" /> : <Plus className="w-5 h-5" />}
                 </div>
               </button>
