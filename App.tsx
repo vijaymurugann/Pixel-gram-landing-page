@@ -27,7 +27,7 @@ const App: React.FC = () => {
   }, [loading]);
 
   useEffect(() => {
-    const lenis = new Lenis();
+    const lenis = new Lenis({ anchors: true });
 
     function raf(time: number) {
       lenis.raf(time);
@@ -47,7 +47,7 @@ const App: React.FC = () => {
           <Navbar />
           {/* Main Content Flow - Full Width */}
           <main className="w-full flex flex-col">
-              <SectionWrapper theme="dark">
+              <SectionWrapper theme="dark" id="home">
                 <Hero onCtaClick={() => console.log("Start Impact Clicked")} />
               </SectionWrapper>
               
@@ -55,19 +55,19 @@ const App: React.FC = () => {
                 <About />
               </SectionWrapper>
               
-              <SectionWrapper theme="light">
+              <SectionWrapper theme="light" id="programs">
                 <Programs />
               </SectionWrapper>
               
-              <SectionWrapper theme="light">
+              <SectionWrapper theme="light" id="inspiration">
                 <Services />
               </SectionWrapper>
               
-              <SectionWrapper theme="light">
+              <SectionWrapper theme="light" id="testimonials">
                 <Testimonials />
               </SectionWrapper>
               
-              <SectionWrapper theme="light">
+              <SectionWrapper theme="light" id="faq">
                 <FAQ />
               </SectionWrapper>
 {/*               
@@ -75,7 +75,7 @@ const App: React.FC = () => {
                 <JoinUs />
               </SectionWrapper> */}
               
-              <SectionWrapper theme="dark">
+              <SectionWrapper theme="dark" id="contact">
                 <Footer />
               </SectionWrapper>
           </main>
