@@ -54,11 +54,8 @@ export const Navbar: React.FC = () => {
       }`}
     >
       {/* Logo */}
-      <div className="pointer-events-auto bg-seerakku-yellow px-4 py-3 rounded-full flex items-center gap-2 shadow-lg  transition-transform cursor-pointer">
-               <div className="p-[2px] rounded-full bg-white">
-            <img src="/favicon.png" alt="Logo" className="w-6 h-6" />
-         </div>
-         <span className="text-white font-bold text-lg tracking-tight">Pixelgram.</span>
+      <div className="pointer-events-auto bg-white px-4 py-3 rounded-full shadow-lg transition-transform cursor-pointer">
+        <img src="/logo.png" alt="Pixelgram Logo" className="h-6 md:h-7 w-auto" />
       </div>
 
       {/* Centered Nav Links - Hidden on small mobile */}

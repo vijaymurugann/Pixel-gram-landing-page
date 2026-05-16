@@ -21,9 +21,9 @@ export const Footer: React.FC = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-16 mb-24">
           
           <div className="max-w-3xl flex-1">
-            {/* Logo Pill */}
-            <div className="bg-white text-black px-8 py-3 rounded-full inline-flex items-center gap-3 mb-16 font-bold text-xl shadow-[0_0_20px_rgba(255,255,255,0.2)]">
-               <img src="/logo.png" alt="Pixelgram Logo" className="h-8 w-auto" />
+            {/* Logo */}
+            <div className="inline-flex items-center mb-16">
+               <img src="/logo.png" alt="Pixelgram Logo" className="h-12 md:h-14 w-auto" />
             </div>
 
             {/* Headline */}
