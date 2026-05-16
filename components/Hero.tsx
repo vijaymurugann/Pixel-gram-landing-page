@@ -50,8 +50,8 @@ We didn't build another photo app. We built photobooks your mother-in-law will c
             onClick={onCtaClick}
             className="group flex items-center gap-4 pl-6 pr-2 py-2 bg-seerakku-yellow hover:bg-yellow-400 rounded-full transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,215,0,0.6)] hover:shadow-[0_0_60px_-10px_rgba(255,215,0,0.8)] border border-white/20"
           >
-            <span className="text-black text-md font-bold tracking-wide">Create your book today</span>
-            <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center group-hover:rotate-45 transition-transform duration-300">
+            <span className="text-white text-md font-bold tracking-wide">Create your book today</span>
+            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center group-hover:rotate-45 transition-transform duration-300">
                <ArrowUpRight className="w-5 h-5 text-seerakku-yellow" />
             </div>
           </button>
