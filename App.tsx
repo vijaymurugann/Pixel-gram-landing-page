@@ -10,22 +10,10 @@ import { JoinUs } from './components/JoinUs';
 import { Footer } from './components/Footer';
 import { NavProvider } from './context/NavContext';
 import { SectionWrapper } from './components/SectionWrapper';
-import { Preloader } from './components/Preloader';
-
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Lenis from 'lenis';
 
 const App: React.FC = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    if (loading) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
-  }, [loading]);
-
   useEffect(() => {
     const lenis = new Lenis({ anchors: true });
 
