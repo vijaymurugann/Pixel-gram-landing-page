@@ -1,3 +1,36 @@
+html {
+  font-size: 80%;
+}
+
+/* Hero section font size restoration (offsetting html { font-size: 80% }) */
+.hero-font-reset h1,
+.hero-font-reset .text-5xl {
+  font-size: 48px !important; /* Original size of text-5xl: 3rem = 48px */
+}
+
+.hero-font-reset p,
+.hero-font-reset .text-lg {
+  font-size: 18px !important; /* Original size of text-lg: 1.125rem = 18px */
+}
+
+@media (min-width: 768px) {
+  .hero-font-reset p,
+  .hero-font-reset .md\:text-xl,
+  .hero-font-reset .text-xl {
+    font-size: 20px !important; /* Original size of text-xl: 1.25rem = 20px */
+  }
+}
+
+.hero-font-reset .text-xs {
+  font-size: 12px !important; /* Original size of text-xs: 0.75rem = 12px */
+}
+
+.hero-font-reset .text-base,
+.hero-font-reset button span {
+  font-size: 16px !important; /* Original size of text-base: 1rem = 16px */
+}
+
+
 html.lenis, html.lenis body {
   height: auto;
 }

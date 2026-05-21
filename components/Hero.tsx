@@ -8,7 +8,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
   return (
-    <div className="relative w-full flex-1 flex items-end px-6 md:px-12 pb-12 md:pb-20 min-h-screen">
+    <div className="relative w-full flex-1 flex items-end px-6 md:px-12 pb-12 md:pb-20 min-h-screen hero-font-reset">
       
       {/* Background Image - Lush Nature/Agroforestry Theme */}
       <div className="absolute inset-0 z-0">
