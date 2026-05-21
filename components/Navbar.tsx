@@ -82,7 +82,7 @@ export const Navbar: React.FC = () => {
         }`}>
           <span>Create your photobook</span>
           <div className={`w-6 h-6 rounded-full flex items-center justify-center transition-colors ${
-              isDark ? 'bg-black group-hover:bg-seerakku-green' : 'bg-white group-hover:bg-seerakku-green'
+              isDark ? 'bg-black group-hover:bg-black/80' : 'bg-white group-hover:bg-gray-100'
           }`}>
             <ArrowUpRight className={`w-3 h-3 ${
                isDark ? 'text-white' : 'text-black'

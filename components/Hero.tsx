@@ -37,20 +37,24 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
 
           {/* Headline - Typography scaling for impact */}
           <h1 className="text-5xl font-bold text-white tracking-tight leading-[0.95] mb-8 shadow-sm">
-            Some memories deserve <br />
+            Your memories deserve <br />
             more than a screen.
           </h1>
 
           {/* Description */}
           <p className="text-gray-200 text-lg md:text-xl mb-10 max-w-xl font-light leading-relaxed border-l-4 border-seerakku-yellow pl-4">
-We didn't build another photo app. We built photobooks your mother-in-law will cry over. Create an art-store quality hardcover directly from your phone in just 15 minutes.          </p>
+            We didn't build another photo app.
+            <br />
+            <br />
+            We built photo books that can withstand time. Turn your phone's camera roll into a premium hardcover in minutes, no designer needed.
+          </p>
 
           {/* CTA Button */}
           <button 
             onClick={onCtaClick}
-            className="group flex items-center gap-4 pl-6 pr-2 py-2 bg-seerakku-yellow hover:bg-yellow-400 rounded-full transition-all duration-300 shadow-[0_0_40px_-10px_rgba(255,215,0,0.6)] hover:shadow-[0_0_60px_-10px_rgba(255,215,0,0.8)] border border-white/20"
+            className="group flex items-center gap-4 pl-6 pr-2 py-2 bg-seerakku-yellow hover:bg-seerakku-yellow/90 rounded-full transition-all duration-300 shadow-[0_0_40px_-10px_rgba(0,0,0,0.35)] hover:shadow-[0_0_60px_-10px_rgba(0,0,0,0.45)] border border-white/20"
           >
-            <span className="text-white text-md font-bold tracking-wide">Create your book today</span>
+            <span className="text-white text-md font-bold tracking-wide">Create your book now.</span>
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center group-hover:rotate-45 transition-transform duration-300">
                <ArrowUpRight className="w-5 h-5 text-seerakku-yellow" />
             </div>
