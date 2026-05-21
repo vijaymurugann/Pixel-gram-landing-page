@@ -42,8 +42,8 @@ export const About: React.FC = () => {
       </div>
 
       {/* Main Typography Content */}
-      <div ref={containerRef} className="max-w-6xl mx-auto text-center">
-        <div className="text-3xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-tight text-neutral-900">
+      <div ref={containerRef} className="max-w-6xl mx-auto text-center flex flex-col gap-12 md:gap-16">
+        <p className="text-3xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-tight text-neutral-900">
             <span>You have </span>
             <span 
               className={`inline-flex items-center justify-center align-middle mx-2 px-5 py-2 bg-seerakku-yellow/90 backdrop-blur-sm rounded-full text-base md:text-xl font-bold text-white -rotate-2 hover:rotate-0 transition-transform cursor-default shadow-md border border-seerakku-yellow ${isVisible ? 'animate-bounce-in' : 'opacity-0'}`}
@@ -52,9 +52,11 @@ export const About: React.FC = () => {
                 <Camera className="w-5 h-5 mr-2" />
                 4,000+
             </span>
-            <span> photos on your phone, buried under screenshots and blurry food photos. We didn't build another photo app.  </span>
-            <br/>
-            <span >We built </span>
+            <span> photos on your phone, buried under screenshots and blurry food photos. We didn't build another photo app.</span>
+        </p>
+
+        <p className="text-3xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-tight text-neutral-900">
+            <span>We built </span>
             <span 
               className={`inline-flex align-middle mx-2 align-bottom ${isVisible ? 'animate-bounce-in' : 'opacity-0'}`}
               style={{ animationDelay: '200ms' }}
@@ -69,17 +71,9 @@ export const About: React.FC = () => {
             <span className="shiny-text text-seerakku-yellow font-bold decoration-clone">
                 In just fifteen minutes.
             </span>
-        </div>
+        </p>
       </div>
 
-      {/* Bottom Decoration */}
-      <div className="flex items-center justify-center mt-24 md:mt-32 gap-6">
-         <div className="h-[1px] w-16 md:w-32 bg-gradient-to-r from-transparent to-neutral-300"></div>
-         <div className="p-4 border border-neutral-200 rounded-full bg-white shadow-sm animate-pulse-slow">
-            <img src="/favicon.png" alt="Logo" className="w-12 h-12" />
-         </div>
-         <div className="h-[1px] w-16 md:w-32 bg-gradient-to-l from-transparent to-neutral-300"></div>
-      </div>
     </div>
   );
 };
