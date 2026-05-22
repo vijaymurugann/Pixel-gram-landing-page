@@ -1,42 +1,9 @@
-import React, { useEffect, useRef } from 'react';
-import { ArrowUpRight, ArrowRight, ArrowLeft, Plus } from 'lucide-react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
+import React from 'react';
+import { ArrowUpRight, ArrowRight } from 'lucide-react';
 
 export const Programs: React.FC = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const gridRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const cards = gsap.utils.toArray('.program-card');
-
-      // Set initial state: clipped to top-left corner
-      gsap.set(cards, { 
-        clipPath: 'inset(0 100% 100% 0 round 2.5rem)',
-        autoAlpha: 1 // ensure it's visible to the renderer so clipPath works
-      });
-
-      // Animate all cards simultaneously
-      gsap.to(cards, {
-        clipPath: 'inset(0 0% 0% 0 round 2.5rem)',
-        duration: 0.5,
-        ease: 'power4.out',
-        scrollTrigger: {
-          trigger: gridRef.current, // Trigger based on the grid container
-          start: 'top 75%', // Start animation when top of grid hits 75% of viewport
-          toggleActions: 'play none none reverse',
-        }
-      });
-    }, containerRef);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <div ref={containerRef} className="bg-white py-20 px-6 md:px-12 lg:px-20 text-seerakku-black border-t border-gray-100">
+    <div className="bg-white py-20 px-6 md:px-12 lg:px-20 text-seerakku-black border-t border-gray-100">
        {/* Section Header */}
        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-8">
         <div className="flex items-center gap-4">
@@ -53,10 +20,10 @@ export const Programs: React.FC = () => {
       </div>
 
       {/* Main Layout: 2 Columns */}
-      <div ref={gridRef} className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:h-[600px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:h-[600px]">
         
         {/* Left Column: Step 1 (Tall Card) */}
-        <div className="program-card relative group overflow-hidden rounded-[2.5rem] bg-gray-900 shadow-xl transition-all duration-500 hover:shadow-2xl h-[500px] lg:h-full invisible">
+        <div className="program-card relative group overflow-hidden rounded-[2.5rem] bg-gray-900 shadow-xl transition-all duration-500 hover:shadow-2xl h-[500px] lg:h-full">
            <img 
              src="/step1_upload.png" 
              alt="Select Your Moments"
@@ -89,7 +56,7 @@ export const Programs: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-1">
             
             {/* Step 2 */}
-            <div className="program-card relative overflow-hidden rounded-[2.5rem] bg-gray-900 group h-64 sm:h-auto invisible">
+            <div className="program-card relative overflow-hidden rounded-[2.5rem] bg-gray-900 group h-64 sm:h-auto">
                 <img 
                    src="/step2_layout.png" 
                    alt="Smart Auto-Layout" 
@@ -110,7 +77,7 @@ export const Programs: React.FC = () => {
             </div>
 
             {/* Step 3 */}
-            <div className="program-card relative overflow-hidden rounded-[2.5rem] bg-gray-900 group h-64 sm:h-auto invisible">
+            <div className="program-card relative overflow-hidden rounded-[2.5rem] bg-gray-900 group h-64 sm:h-auto">
                 <img 
                   src="/step3_delivery.png" 
                   alt="Delivered to Your Doorstep"

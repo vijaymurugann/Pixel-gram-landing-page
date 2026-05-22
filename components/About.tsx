@@ -50,27 +50,13 @@ export const About: React.FC = () => {
               style={{ animationDelay: '0ms' }}
             >
                 <Camera className="w-5 h-5 mr-2" />
-                4,000+
+                8,000+
             </span>
-            <span> photos on your phone, buried under screenshots and blurry food photos. We didn't build another photo app.</span>
+            <span> photos on your phone, buried between screenshots, forgotten clutter, &amp; everyday noise. Hidden in that endless scroll are the moments worth holding onto like birthdays, trips, quiet moments, &amp; people who matter most.</span>
         </p>
 
         <p className="text-3xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-tight text-neutral-900">
-            <span>We built </span>
-            <span 
-              className={`inline-flex align-middle mx-2 align-bottom ${isVisible ? 'animate-bounce-in' : 'opacity-0'}`}
-              style={{ animationDelay: '200ms' }}
-            >
-                <img 
-                    src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=200&h=200&auto=format&fit=crop" 
-                    alt="Happy family memory" 
-                    className="w-16 h-12 md:w-28 md:h-20 rounded-lg object-cover border-4 border-white shadow-xl transform hover:scale-105 transition-transform duration-500"
-                />
-            </span>
-            <span> photobooks your family will actually cry over. The Pixelgram Book is a premium, lay-flat hardcover that looks like an art book you'd find in a store. But you made it. From your phone. </span>
-            <span className="shiny-text text-seerakku-yellow font-bold decoration-clone">
-                In just fifteen minutes.
-            </span>
+            <span>Pixelgram gives your favourite memories a place beyond screens, beautifully preserved in premium photo books that can withstand time.</span>
         </p>
       </div>
 
