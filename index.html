@@ -1,90 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <title>Pixelgram - Restore Nature</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              seerakku: {
-                yellow: '#c91f8d',
-                green: '#228B22', 
-                black: '#121212',
-                darkGreen: '#004d25',
-              }
-            }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <title>Pixelgram - Your memories deserve
+    more than a screen.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
           },
+          colors: {
+            seerakku: {
+              yellow: '#c91f8d',
+              green: '#228B22',
+              black: '#121212',
+              darkGreen: '#004d25',
+            }
+          }
         },
-      }
-    </script>
-    <style>
-      body {
-        background-color: #121212; /* Matches seerakku-black */
-      }
-      .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-      }
-      .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-      }
-      
-      /* Shiny Text Animation */
-      .shiny-text {
-        background: linear-gradient(
-          90deg,
+      },
+    }
+  </script>
+  <style>
+    body {
+      background-color: #121212;
+      /* Matches seerakku-black */
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Shiny Text Animation */
+    .shiny-text {
+      background: linear-gradient(90deg,
           #c91f8d 0%,
           #dd4fa9 25%,
           #f19acb 50%,
           #dd4fa9 75%,
-          #c91f8d 100%
-        );
-        background-size: 200% auto;
-        color: #000;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: shine 3s linear infinite;
+          #c91f8d 100%);
+      background-size: 200% auto;
+      color: #000;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 3s linear infinite;
+    }
+
+    @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }
+
+    /* Bounce In Animation */
+    @keyframes bounce-in {
+      0% {
+        opacity: 0;
+        transform: scale(0.3);
       }
 
-      @keyframes shine {
-        to {
-          background-position: 200% center;
-        }
+      50% {
+        opacity: 1;
+        transform: scale(1.05);
       }
 
-      /* Bounce In Animation */
-      @keyframes bounce-in {
-        0% {
-          opacity: 0;
-          transform: scale(0.3);
-        }
-        50% {
-          opacity: 1;
-          transform: scale(1.05);
-        }
-        70% {
-          transform: scale(0.9);
-        }
-        100% {
-          opacity: 1;
-          transform: scale(1);
-        }
+      70% {
+        transform: scale(0.9);
       }
-      
-      .animate-bounce-in {
-        animation: bounce-in 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
       }
-    </style>
+    }
+
+    .animate-bounce-in {
+      animation: bounce-in 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -99,10 +105,12 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css">
 </head>
-  <body>
-    <div id="root"></div>
+
+<body>
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>
