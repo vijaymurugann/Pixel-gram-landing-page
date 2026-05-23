@@ -78,9 +78,9 @@ export const Programs: React.FC = () => {
           <img
             src="/step1_upload.png"
             alt="Select Your Moments"
-            className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
           <div className="absolute top-6 left-6 flex gap-2">
             <span className="px-4 py-2 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-xs font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
@@ -107,9 +107,9 @@ export const Programs: React.FC = () => {
           <img
             src="/step2_layout.png"
             alt="Smart Auto-Layout"
-            className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
           <div className="absolute top-6 left-6 flex gap-2">
             <span className="px-4 py-2 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-xs font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
@@ -134,11 +134,11 @@ export const Programs: React.FC = () => {
           className="relative group overflow-hidden rounded-[1.6rem] bg-gray-900 shadow-xl transition-all duration-500 hover:shadow-2xl h-[500px]"
         >
           <img
-            src="/step3_delivery.png"
+            src="/step3_order.png"
             alt="Delivered to Your Doorstep"
-            className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
           <div className="absolute top-6 left-6 flex gap-2">
             <span className="px-4 py-2 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-xs font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
