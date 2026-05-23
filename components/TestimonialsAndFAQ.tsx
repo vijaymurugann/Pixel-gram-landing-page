@@ -99,9 +99,9 @@ const TestimonialCard: React.FC<{ item: typeof testimonials[0] }> = ({ item }) =
         <div className="px-3 py-1 bg-white rounded-full border border-gray-100 font-bold text-gray-800 text-[10px] md:text-xs shadow-sm flex items-center justify-center h-8 w-fit shrink-0">
           <span>{item.company}</span>
         </div>
-        <img 
-          src={item.avatar} 
-          alt={item.name} 
+        <img
+          src={item.avatar}
+          alt={item.name}
           className="w-9 h-9 rounded-full object-cover border-2 border-white shadow-sm shrink-0"
         />
       </div>
@@ -128,7 +128,7 @@ const TestimonialCard: React.FC<{ item: typeof testimonials[0] }> = ({ item }) =
 
 export const TestimonialsAndFAQ: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  
+
   // Partition testimonials for two distinct scrolling rows
   const row1 = [testimonials[0], testimonials[2], testimonials[4], testimonials[6]];
   const row2 = [testimonials[1], testimonials[3], testimonials[5]];
@@ -140,14 +140,14 @@ export const TestimonialsAndFAQ: React.FC = () => {
   return (
     <div className="bg-white py-20 px-6 md:px-12 lg:px-20 text-seerakku-black border-t border-gray-100 overflow-hidden">
       <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 w-full">
-        
+
         {/* Left Column: Testimonials (Auto-scrolling) */}
         <div className="w-full lg:w-1/2 flex flex-col overflow-hidden shrink-0">
           {/* Badge & Title */}
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center text-seerakku-yellow font-bold text-base shadow-lg shrink-0">
+            {/* <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center text-seerakku-yellow font-bold text-base shadow-lg shrink-0">
               05
-            </div>
+            </div> */}
             <div className="px-4 py-1.5 bg-gray-100 rounded-full text-xs font-semibold uppercase tracking-wider text-neutral-600">
               TESTIMONIALS
             </div>
@@ -184,9 +184,9 @@ export const TestimonialsAndFAQ: React.FC = () => {
         <div className="w-full lg:flex-1 flex flex-col">
           {/* Badge & Title */}
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center text-seerakku-yellow font-bold text-base shadow-lg shrink-0">
+            {/* <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center text-seerakku-yellow font-bold text-base shadow-lg shrink-0">
               06
-            </div>
+            </div> */}
             <div className="px-4 py-1.5 bg-gray-100 rounded-full text-xs font-semibold uppercase tracking-wider text-neutral-600">
               FAQ
             </div>
@@ -200,28 +200,25 @@ export const TestimonialsAndFAQ: React.FC = () => {
           {/* Accordion container */}
           <div className="flex flex-col gap-4">
             {faqs.map((faq, index) => (
-              <div 
-                key={index} 
-                className={`border border-gray-200 rounded-[1.75rem] overflow-hidden transition-all duration-300 ${
-                  openIndex === index ? 'bg-gray-50 shadow-md' : 'bg-white hover:bg-gray-50'
-                }`}
+              <div
+                key={index}
+                className={`border border-gray-200 rounded-[1.75rem] overflow-hidden transition-all duration-300 ${openIndex === index ? 'bg-gray-50 shadow-md' : 'bg-white hover:bg-gray-50'
+                  }`}
               >
                 <button
                   className="w-full text-left px-6 py-4 md:px-8 md:py-5 flex items-center justify-between focus:outline-none"
                   onClick={() => toggleFaq(index)}
                 >
                   <span className="text-base md:text-lg font-medium text-neutral-900 pr-4">{faq.question}</span>
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors duration-300 ${
-                    openIndex === index ? 'bg-seerakku-yellow text-white' : 'bg-gray-100 text-gray-500'
-                  }`}>
+                  <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors duration-300 ${openIndex === index ? 'bg-seerakku-yellow text-white' : 'bg-gray-100 text-gray-500'
+                    }`}>
                     {openIndex === index ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                   </div>
                 </button>
-                
-                <div 
-                  className={`px-6 md:px-8 overflow-hidden transition-all duration-500 ease-in-out ${
-                    openIndex === index ? 'max-h-96 pb-5 md:pb-6 opacity-100' : 'max-h-0 opacity-0'
-                  }`}
+
+                <div
+                  className={`px-6 md:px-8 overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? 'max-h-96 pb-5 md:pb-6 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
                 >
                   <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                     {faq.answer}
