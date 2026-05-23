@@ -1,11 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { useNavTheme } from '../context/NavContext';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
-  const lastScrollY = useRef(0);
 
   const { navTheme } = useNavTheme();
   
@@ -19,13 +17,6 @@ export const Navbar: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
-      // Determine visibility direction
-      if (currentScrollY > lastScrollY.current && currentScrollY > 50) {
-        setIsVisible(false); // Hide when scrolling down
-      } else {
-        setIsVisible(true);  // Show when scrolling up or at top
-      }
 
       // Determine sticky state style
       if (currentScrollY > 50) {
@@ -33,8 +24,6 @@ export const Navbar: React.FC = () => {
       } else {
         setIsScrolled(false);
       }
-
-      lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -45,9 +34,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between w-full transition-all duration-300 transform ${
-        isVisible ? 'translate-y-0' : '-translate-y-full'
-      } ${
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between w-full transition-all duration-300 ${
         isScrolled
           ? 'bg-transparent py-4 px-6 md:px-12 pointer-events-none'
           : 'bg-transparent py-6 px-6 md:py-8 md:px-12 pointer-events-none'

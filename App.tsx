@@ -4,8 +4,7 @@ import { Navbar } from './components/Navbar';
 import { About } from './components/About';
 import { Programs } from './components/Programs';
 import { Services } from './components/Services';
-import { Testimonials } from './components/Testimonials';
-import { FAQ } from './components/FAQ';
+import { TestimonialsAndFAQ } from './components/TestimonialsAndFAQ';
 import { JoinUs } from './components/JoinUs';
 import { Footer } from './components/Footer';
 import { NavProvider } from './context/NavContext';
@@ -32,41 +31,37 @@ const App: React.FC = () => {
   return (
     <NavProvider>
       <div className="min-h-screen w-full bg-seerakku-black relative">
-          <Navbar />
-          {/* Main Content Flow - Full Width */}
-          <main className="w-full flex flex-col">
-              <SectionWrapper theme="dark" id="home">
-                <Hero onCtaClick={() => console.log("Start Impact Clicked")} />
-              </SectionWrapper>
-              
-              <SectionWrapper theme="light">
-                <About />
-              </SectionWrapper>
-              
-              <SectionWrapper theme="light" id="programs">
-                <Programs />
-              </SectionWrapper>
-              
-              <SectionWrapper theme="light" id="inspiration">
-                <Services />
-              </SectionWrapper>
-              
-              <SectionWrapper theme="light" id="testimonials">
-                <Testimonials />
-              </SectionWrapper>
-              
-              <SectionWrapper theme="light" id="faq">
-                <FAQ />
-              </SectionWrapper>
-{/*               
+        <Navbar />
+        {/* Main Content Flow - Full Width */}
+        <main className="w-full flex flex-col">
+          <SectionWrapper theme="dark" id="home">
+            <Hero onCtaClick={() => console.log("Start Impact Clicked")} />
+          </SectionWrapper>
+
+          <SectionWrapper theme="light" id="programs">
+            <Programs />
+          </SectionWrapper>
+
+          <SectionWrapper theme="light" id="inspiration">
+            <Services />
+          </SectionWrapper>
+
+          <SectionWrapper theme="light" id="faq">
+            <TestimonialsAndFAQ />
+          </SectionWrapper>
+          <SectionWrapper theme="light">
+            <About />
+          </SectionWrapper>
+
+          {/*               
               <SectionWrapper theme="dark">
                 <JoinUs />
               </SectionWrapper> */}
-              
-              <SectionWrapper theme="dark" id="contact">
-                <Footer />
-              </SectionWrapper>
-          </main>
+
+          <SectionWrapper theme="dark" id="contact">
+            <Footer />
+          </SectionWrapper>
+        </main>
       </div>
     </NavProvider>
   );
