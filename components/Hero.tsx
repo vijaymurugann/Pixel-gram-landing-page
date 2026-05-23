@@ -52,12 +52,12 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
           {/* CTA Button */}
           <button 
             onClick={onCtaClick}
-            className="group flex items-center gap-4 pl-6 pr-2 py-2 bg-seerakku-yellow hover:bg-seerakku-yellow/90 rounded-full transition-all duration-300 shadow-[0_0_40px_-10px_rgba(0,0,0,0.35)] hover:shadow-[0_0_60px_-10px_rgba(0,0,0,0.45)] border border-white/20"
+            className="group flex items-center gap-4 pl-6 pr-2 py-2 bg-white hover:bg-neutral-50 rounded-full transition-all duration-300 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_40px_rgba(0,0,0,0.4)] border border-white/20 hover:scale-[1.02]"
           >
-            <span className="text-white text-md font-bold tracking-wide">Create your book now.</span>
-            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center group-hover:rotate-45 transition-transform duration-300">
-               <ArrowUpRight className="w-5 h-5 text-seerakku-yellow" />
-            </div>
+            <span className="bg-gradient-to-r from-[#c91f8d] to-[#dd4fa9] bg-clip-text text-transparent text-md font-bold tracking-wide">Create your book now.</span>
+            <div className="w-10 h-10 bg-gradient-to-br from-[#c91f8d] to-[#dd4fa9] rounded-full flex items-center justify-center group-hover:rotate-45 transition-transform duration-300 shadow-sm">
+               <ArrowUpRight className="w-5 h-5 text-white" />
+             </div>
           </button>
         </div>
 

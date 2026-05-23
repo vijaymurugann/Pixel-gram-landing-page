@@ -31,9 +31,9 @@ export const About: React.FC = () => {
           {/* <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-seerakku-yellow font-bold text-lg shadow-lg">
             01
           </div> */}
-          <div className="px-6 py-2 bg-gray-100 rounded-full text-sm font-semibold uppercase tracking-wider text-neutral-600">
+          {/* <div className="px-6 py-2 bg-gray-100 rounded-full text-sm font-semibold uppercase tracking-wider text-neutral-600">
             About Us
-          </div>
+          </div> */}
         </div>
         <a href="#" className="flex items-center gap-2 group text-sm font-semibold hover:text-seerakku-green transition-colors">
           Learn more
@@ -53,10 +53,6 @@ export const About: React.FC = () => {
             8,000+
           </span>
           <span> photos on your phone, buried between screenshots, forgotten clutter, &amp; everyday noise. Hidden in that endless scroll are the moments worth holding onto like birthdays, trips, quiet moments, &amp; people who matter most.</span>
-        </p>
-
-        <p className="text-3xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-tight text-neutral-900">
-          <span>Pixelgram gives your favourite memories a place beyond screens, beautifully preserved in premium photo books that can withstand time.</span>
         </p>
       </div>
 

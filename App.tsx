@@ -1,5 +1,6 @@
 import React from 'react';
 import { Hero } from './components/Hero';
+import { QuoteReveal } from './components/QuoteReveal';
 import { Navbar } from './components/Navbar';
 import { About } from './components/About';
 import { Programs } from './components/Programs';
@@ -38,6 +39,10 @@ const App: React.FC = () => {
             <Hero onCtaClick={() => console.log("Start Impact Clicked")} />
           </SectionWrapper>
 
+          <SectionWrapper theme="light" id="quote">
+            <QuoteReveal />
+          </SectionWrapper>
+
           <SectionWrapper theme="light" id="programs">
             <Programs />
           </SectionWrapper>
@@ -53,12 +58,12 @@ const App: React.FC = () => {
             <About />
           </SectionWrapper>
 
-          {/*               
-              <SectionWrapper theme="dark">
-                <JoinUs />
-              </SectionWrapper> */}
 
-          <SectionWrapper theme="dark" id="contact">
+          {/* <SectionWrapper theme="dark">
+            <JoinUs />
+          </SectionWrapper> */}
+
+          <SectionWrapper theme="light" id="contact">
             <Footer />
           </SectionWrapper>
         </main>
