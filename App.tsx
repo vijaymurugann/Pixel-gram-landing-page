@@ -39,25 +39,26 @@ const App: React.FC = () => {
             <Hero onCtaClick={() => console.log("Start Impact Clicked")} />
           </SectionWrapper>
 
-          <SectionWrapper theme="light" id="quote">
-            <QuoteReveal />
-          </SectionWrapper>
-
           <SectionWrapper theme="light" id="programs">
             <Programs />
           </SectionWrapper>
 
-          <SectionWrapper theme="light" id="inspiration">
+          {/* <SectionWrapper theme="light" id="inspiration">
             <Services />
-          </SectionWrapper>
+          </SectionWrapper> */}
 
           <SectionWrapper theme="light" id="faq">
             <TestimonialsAndFAQ />
           </SectionWrapper>
-          <SectionWrapper theme="light">
-            <About />
-          </SectionWrapper>
 
+
+          {/* <SectionWrapper theme="light" id="quote">
+            <QuoteReveal />
+          </SectionWrapper> */}
+
+          {/* <SectionWrapper theme="light">
+            <About />
+          </SectionWrapper> */}
 
           {/* <SectionWrapper theme="dark">
             <JoinUs />

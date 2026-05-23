@@ -60,11 +60,11 @@ export const Programs: React.FC = () => {
       {/* Two-Column Header */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 items-start">
         <h2 className="lg:col-span-7 text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-seerakku-black">
-          Three Steps to a <span className="text-seerakku-yellow font-serif italic">Finished Book</span>
+          Three Steps to a <span className="text-seerakku-yellow">Finished Book</span>
         </h2>
-        <p className="lg:col-span-5 text-gray-500 text-lg md:text-xl leading-relaxed lg:pt-4">
+        {/* <p className="lg:col-span-5 text-gray-500 text-lg md:text-xl leading-relaxed lg:pt-4">
           We've removed the friction so you know exactly what to expect. Go from camera roll to your door steps with zero stress and complete confidence.
-        </p>
+        </p> */}
       </div>
 
       {/* 3-Column Equal-Sized Step Grid */}
@@ -82,11 +82,11 @@ export const Programs: React.FC = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
-          <div className="absolute top-6 left-6 flex gap-2">
-            <span className="px-4 py-2 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-xs font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
+          <div className="absolute top-6 left-6 flex gap-2.5">
+            <span className="px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
               Step 01
             </span>
-            <span className="px-4 py-2 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-xs font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
+            <span className="px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
               Upload
             </span>
           </div>
@@ -111,19 +111,19 @@ export const Programs: React.FC = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
-          <div className="absolute top-6 left-6 flex gap-2">
-            <span className="px-4 py-2 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-xs font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
+          <div className="absolute top-6 left-6 flex gap-2.5">
+            <span className="px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
               Step 02
             </span>
-            <span className="px-4 py-2 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-xs font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
+            <span className="px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
               Edit
             </span>
           </div>
 
           <div className="absolute bottom-8 left-8 right-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">Smart Auto-Layout</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">AI Auto-Layout</h3>
             <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-              Let our smart editor auto-arrange your moments into a perfect layout in seconds.
+              Let our AI editor auto-arrange your moments into a perfect layout in seconds.
             </p>
           </div>
         </div>
@@ -140,11 +140,11 @@ export const Programs: React.FC = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
-          <div className="absolute top-6 left-6 flex gap-2">
-            <span className="px-4 py-2 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-xs font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
+          <div className="absolute top-6 left-6 flex gap-2.5">
+            <span className="px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
               Step 03
             </span>
-            <span className="px-4 py-2 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-xs font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
+            <span className="px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
               Order
             </span>
           </div>
