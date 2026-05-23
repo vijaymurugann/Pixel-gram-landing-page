@@ -70,12 +70,16 @@ const faqs = [
     answer: "No surprises here. Our books are straightforwardly priced at ₹2,999 or ₹3,499, and all prices are completely GST inclusive."
   },
   {
-    question: "Is there a return policy?",
-    answer: "Yes. If your book arrives with a printing or manufacturing defect, we will replace it at our own cost."
+    question: "Is there a 100% Satisfaction Guarantee?",
+    answer: "Absolutely. If anything goes wrong, just let us know and we’ll reprint your order, free of charge."
   },
   {
-    question: "Can I add a personalized message?",
-    answer: "Absolutely. Every Pixelgram book includes a dedicated section for a personal message to make your gift extra special."
+    question: "Do you offer fast shipping options?",
+    answer: "Yes, choose from a range of express and tracked options, with delivery to 50 countries."
+  },
+  {
+    question: "Is there a return policy?",
+    answer: "Yes. If your book arrives with a printing or manufacturing defect, we will replace it at our own cost."
   },
   {
     question: "What image formats are supported?",
@@ -84,10 +88,6 @@ const faqs = [
   {
     question: "What kind of paper do you use?",
     answer: "We print exclusively on premium soft matte paper, giving your photos a high-end, art-store quality finish without any glaring reflections."
-  },
-  {
-    question: "Do you ship outside India?",
-    answer: "Currently, we only ship across India."
   }
 ];
 
