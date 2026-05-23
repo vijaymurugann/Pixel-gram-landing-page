@@ -20,8 +20,8 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
           className="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105"
         />
         {/* Complex gradient overlay to ensure text pops while keeping the image vibrant */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-black/40 to-black/10 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-transparent" />
       </div>
 
       {/* Content Container */}
