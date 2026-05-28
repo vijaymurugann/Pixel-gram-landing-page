@@ -113,60 +113,25 @@ export const Footer: React.FC = () => {
         <div className="h-px w-full bg-slate-200/60 mb-16" />
 
         {/* Contact Info Row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 mb-24 text-lg font-light text-slate-600">
-
-          {/* Website & Contact Slot */}
-          <div className="flex flex-col gap-2">
-            <div className="flex flex-col gap-3 items-start">
-              <a href="https://pixelgram.in" target="_blank" rel="noreferrer" className="text-slate-800 hover:text-seerakku-yellow transition-colors text-xl block flex items-center gap-2.5 font-medium">
-                <Globe className="w-5 h-5 text-[#c91f8d]" />
-                pixelgram.in
-              </a>
-
-              <a href="mailto:admin@pixelgram.in" className="text-slate-800 hover:text-seerakku-yellow transition-colors text-xl block flex items-center gap-2.5 font-medium">
-                <Mail className="w-5 h-5 text-[#c91f8d]" />
-                admin@pixelgram.in
-              </a>
-
-              <a href="https://instagram.com/pixelgram.in" target="_blank" rel="noreferrer" className="text-slate-800 hover:text-seerakku-yellow transition-colors text-xl block flex items-center gap-2.5 font-medium">
-                <Instagram className="w-5 h-5 text-[#dd4fa9]" />
-                @pixelgram.hq
-              </a>
-            </div>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8 mb-24 text-lg font-light text-slate-600">
 
           {/* Inspiration Slot */}
-          <div className="flex flex-col gap-2 md:items-start lg:items-center">
+          <div className="flex flex-col gap-2 md:items-start">
             <div>
-              <div className="flex items-center gap-3 text-slate-900 mb-4 justify-start">
-                <span className="font-medium text-sm uppercase tracking-wider text-slate-500">Inspiration</span>
+              <div className="flex items-center gap-3 mb-6">
+                <span className="font-semibold text-sm uppercase tracking-wider text-seerakku-yellow">INSPIRATION</span>
               </div>
-              <div className="grid grid-cols-2 gap-x-8 gap-y-3 text-base font-normal text-slate-700">
+              <div className="grid grid-cols-2 gap-x-12 gap-y-4 text-xl font-medium text-slate-800">
                 {['Travel', 'Weddings', 'Engagements', "Father's Day", 'Birthdays', 'Anniversaries', 'Year in Review', "Valentine's Day", "Mother's Day"].map((item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
-                    className="hover:text-[#c91f8d] hover:translate-x-1 transition-all duration-200 block"
+                    className="hover:text-seerakku-yellow hover:translate-x-1.5 transition-all duration-200 block"
                   >
                     {item}
                   </a>
                 ))}
               </div>
-            </div>
-          </div>
-
-          {/* Address Slot */}
-          <div className="flex flex-col gap-2 md:items-end md:text-right">
-            <div className="flex items-center gap-3 text-slate-900 mb-1">
-              <MapPin className="w-5 h-5 text-[#c91f8d]" />
-              <span className="font-medium text-sm uppercase tracking-wider text-slate-500">Address</span>
-            </div>
-            <div className="flex flex-col md:items-end">
-              <p className="text-xl leading-snug text-slate-700 font-normal">
-                252, Trichy Main Road,<br />
-                S.Vellalapalayam (PO),<br />
-                Karur - 639004, Tamil Nadu
-              </p>
             </div>
           </div>
 
@@ -180,16 +145,45 @@ export const Footer: React.FC = () => {
             &copy; 2026 Pixelgram. All Rights Reserved.
           </p>
 
-          {/* Nav Pills */}
-          <div className="flex flex-wrap justify-center gap-2">
-            {['Home', 'Inspiration', 'Features', 'FAQs'].map((item) => (
-              <button
-                key={item}
-                className="px-6 py-2.5 rounded-full border border-slate-200 text-slate-800 text-sm font-medium bg-white/40 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all duration-300 backdrop-blur-sm shadow-sm"
-              >
-                {item}
-              </button>
-            ))}
+          {/* Socials / Contact Links */}
+          <div className="flex flex-wrap justify-center gap-6 md:gap-10">
+            <a
+              href="https://pixelgram.in"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-600 hover:text-seerakku-yellow transition-colors text-base md:text-lg flex items-center gap-2 font-medium"
+            >
+              <Globe className="w-5 h-5 text-[#c91f8d]" />
+              pixelgram.in
+            </a>
+
+            <a
+              href="mailto:admin@pixelgram.in"
+              className="text-slate-600 hover:text-seerakku-yellow transition-colors text-base md:text-lg flex items-center gap-2 font-medium"
+            >
+              <Mail className="w-5 h-5 text-[#c91f8d]" />
+              admin@pixelgram.in
+            </a>
+
+            <a
+              href="https://instagram.com/pixelgram.in"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-600 hover:text-seerakku-yellow transition-colors text-base md:text-lg flex items-center gap-2 font-medium"
+            >
+              <Instagram className="w-5 h-5 text-[#dd4fa9]" />
+              @pixelgram.hq
+            </a>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=252,+Trichy+Main+Road,+S.Vellalapalayam+(PO),+Karur+-+639004,+Tamil+Nadu"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-600 hover:text-seerakku-yellow transition-colors text-base md:text-lg flex items-center gap-2 font-medium"
+            >
+              <MapPin className="w-5 h-5 text-[#c91f8d]" />
+              Pixelgram Address
+            </a>
           </div>
 
           {/* Scroll Top Button */}
