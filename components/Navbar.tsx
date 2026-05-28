@@ -34,7 +34,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between w-full transition-all duration-300 ${isScrolled
+      className={`fixed top-[40px] left-0 right-0 z-50 flex items-center justify-between w-full transition-all duration-300 ${isScrolled
           ? 'bg-transparent py-4 px-6 md:px-12 pointer-events-none'
           : 'bg-transparent py-6 px-6 md:py-8 md:px-12 pointer-events-none'
         }`}

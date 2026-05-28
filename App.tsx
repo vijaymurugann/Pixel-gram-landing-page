@@ -2,6 +2,7 @@ import React from 'react';
 import { Hero } from './components/Hero';
 import { QuoteReveal } from './components/QuoteReveal';
 import { Navbar } from './components/Navbar';
+import { AnnouncementBanner } from './components/AnnouncementBanner';
 import { About } from './components/About';
 import { Programs } from './components/Programs';
 import { Services } from './components/Services';
@@ -32,6 +33,7 @@ const App: React.FC = () => {
   return (
     <NavProvider>
       <div className="min-h-screen w-full bg-seerakku-black relative">
+        <AnnouncementBanner />
         <Navbar />
         {/* Main Content Flow - Full Width */}
         <main className="w-full flex flex-col">
