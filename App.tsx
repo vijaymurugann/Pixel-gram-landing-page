@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { AnnouncementBanner } from './components/AnnouncementBanner';
 import { About } from './components/About';
 import { Programs } from './components/Programs';
+import { Specs } from './components/Specs';
 import { Services } from './components/Services';
 import { TestimonialsAndFAQ } from './components/TestimonialsAndFAQ';
 import { JoinUs } from './components/JoinUs';
@@ -43,6 +44,10 @@ const App: React.FC = () => {
 
           <SectionWrapper theme="light" id="programs">
             <Programs />
+          </SectionWrapper>
+
+          <SectionWrapper theme="light" id="specs">
+            <Specs />
           </SectionWrapper>
 
           {/* <SectionWrapper theme="light" id="inspiration">
