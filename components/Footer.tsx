@@ -55,7 +55,7 @@ export const Footer: React.FC = () => {
           ease: 'power2.out',
           scrollTrigger: {
             trigger: containerRef.current,
-            start: 'top bottom-=50',
+            start: 'top bottom-=400',
             end: 'bottom bottom-=50',
             scrub: 1,
           }
@@ -113,7 +113,7 @@ export const Footer: React.FC = () => {
         <div className="h-px w-full bg-slate-200/60 mb-16" />
 
         {/* Contact Info Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-4 mb-24 text-lg font-light text-slate-600">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 mb-24 text-lg font-light text-slate-600">
 
           {/* Website & Contact Slot */}
           <div className="flex flex-col gap-2">
@@ -132,6 +132,26 @@ export const Footer: React.FC = () => {
                 <Instagram className="w-5 h-5 text-[#dd4fa9]" />
                 @pixelgram.hq
               </a>
+            </div>
+          </div>
+
+          {/* Inspiration Slot */}
+          <div className="flex flex-col gap-2 md:items-start lg:items-center">
+            <div>
+              <div className="flex items-center gap-3 text-slate-900 mb-4 justify-start">
+                <span className="font-medium text-sm uppercase tracking-wider text-slate-500">Inspiration</span>
+              </div>
+              <div className="grid grid-cols-2 gap-x-8 gap-y-3 text-base font-normal text-slate-700">
+                {['Travel', 'Weddings', 'Engagements', "Father's Day", 'Birthdays', 'Anniversaries', 'Year in Review', "Valentine's Day", "Mother's Day"].map((item) => (
+                  <a
+                    key={item}
+                    href={`#${item.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
+                    className="hover:text-[#c91f8d] hover:translate-x-1 transition-all duration-200 block"
+                  >
+                    {item}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 
