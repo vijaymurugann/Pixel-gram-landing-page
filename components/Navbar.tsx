@@ -62,15 +62,12 @@ export const Navbar: React.FC = () => {
 
       {/* Right Side Actions */}
       <div className="flex items-center gap-3 pointer-events-auto">
-        <button className={`hidden sm:flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all shadow-lg group hover:scale-[1.02] ${isDark ? 'bg-white hover:bg-neutral-50' : 'bg-black text-white hover:bg-gray-800'
-          }`}>
-          <span className={isDark ? "bg-gradient-to-r from-[#c91f8d] to-[#dd4fa9] bg-clip-text text-transparent font-bold" : ""}>
+        <button className="hidden sm:flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all shadow-lg group hover:scale-[1.02] bg-gradient-to-r from-[#c91f8d] to-[#dd4fa9] hover:from-[#d82a9d] hover:to-[#eb5fb7] text-white border border-white/10">
+          <span>
             Create your book now
           </span>
-          <div className={`w-6 h-6 rounded-full flex items-center justify-center transition-all ${isDark ? 'bg-gradient-to-br from-[#c91f8d] to-[#dd4fa9] group-hover:rotate-45 duration-300' : 'bg-white group-hover:bg-gray-100 group-hover:rotate-45 duration-300'
-            }`}>
-            <ArrowUpRight className={`w-3 h-3 ${isDark ? 'text-white' : 'text-black'
-              }`} />
+          <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center transition-all group-hover:rotate-45 duration-300">
+            <ArrowUpRight className="w-3 h-3 text-[#c91f8d]" />
           </div>
         </button>
       </div>

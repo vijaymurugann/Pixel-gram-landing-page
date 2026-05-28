@@ -43,7 +43,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
 
           {/* Description */}
           <p className="text-gray-200 text-lg md:text-xl mb-10 max-w-xl font-light leading-relaxed border-l-4 border-seerakku-yellow pl-4">
-            Turn your phone's camera roll into a premium hardcover in minutes, no designer needed.
+            Turn your phone's camera roll into a premium layflat photobooks in minutes, no designer needed.
           </p>
 
           {/* CTA Button */}
