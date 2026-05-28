@@ -92,3 +92,44 @@ html.lenis, html.lenis body {
   -webkit-mask-image: linear-gradient(to right, transparent, white 8%, white 92%, transparent);
 }
 
+/* Steps Card Grid Hover Expand & Shrink Interaction */
+@media (min-width: 768px) {
+  .steps-container {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+  }
+
+  .step-card {
+    flex: 1 1 0% !important;
+    transition: flex 1.24s cubic-bezier(0.25, 1, 0.3, 1), box-shadow 0.5s ease !important;
+    min-width: 0 !important;
+    will-change: flex;
+  }
+
+  .step-card:hover {
+    flex: 4 4 0% !important;
+  }
+
+  /* Smoothly fade out bottom text contents for other step cards when container is hovered */
+  .steps-container:hover .step-card:not(:hover) .card-content {
+    opacity: 0 !important;
+    transform: translateY(20px) !important;
+    pointer-events: none !important;
+  }
+
+  /* Smoothly fade out the action badge for other step cards when container is hovered */
+  .steps-container:hover .step-card:not(:hover) .badge-action {
+    opacity: 0 !important;
+    transform: translateX(-15px) !important;
+    pointer-events: none !important;
+  }
+
+  /* Transition timings for content elements */
+  .card-content,
+  .badge-action {
+    transition: opacity 0.45s cubic-bezier(0.25, 1, 0.3, 1), transform 0.45s cubic-bezier(0.25, 1, 0.3, 1) !important;
+  }
+}
+
+

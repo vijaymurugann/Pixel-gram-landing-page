@@ -68,12 +68,12 @@ export const Programs: React.FC = () => {
       </div>
 
       {/* 3-Column Equal-Sized Step Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 steps-container">
 
         {/* Step 1 */}
         <div
           ref={el => { if (el) cardsRef.current[0] = el; }}
-          className="relative group overflow-hidden rounded-[1.6rem] bg-gray-900 shadow-xl transition-all duration-500 hover:shadow-2xl h-[500px]"
+          className="relative group overflow-hidden rounded-[1.6rem] bg-gray-900 shadow-xl transition-all duration-500 hover:shadow-2xl h-[500px] step-card"
         >
           <img
             src="/step1_upload.png"
@@ -83,15 +83,15 @@ export const Programs: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
           <div className="absolute top-6 left-6 flex gap-2.5">
-            <span className="px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
+            <span className="badge-step px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
               Step 01
             </span>
-            <span className="px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
+            <span className="badge-action px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
               Upload
             </span>
           </div>
 
-          <div className="absolute bottom-8 left-8 right-8">
+          <div className="absolute bottom-8 left-8 right-8 card-content">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">Select Your Moments</h3>
             <p className="text-gray-300 text-sm md:text-base leading-relaxed">
               Upload your favorite photos straight from your phone or laptop. No design skills or complicated transfers needed.
@@ -102,7 +102,7 @@ export const Programs: React.FC = () => {
         {/* Step 2 */}
         <div
           ref={el => { if (el) cardsRef.current[1] = el; }}
-          className="relative group overflow-hidden rounded-[1.6rem] bg-gray-900 shadow-xl transition-all duration-500 hover:shadow-2xl h-[500px]"
+          className="relative group overflow-hidden rounded-[1.6rem] bg-gray-900 shadow-xl transition-all duration-500 hover:shadow-2xl h-[500px] step-card"
         >
           <img
             src="/step2_layout.png"
@@ -112,15 +112,15 @@ export const Programs: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
           <div className="absolute top-6 left-6 flex gap-2.5">
-            <span className="px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
+            <span className="badge-step px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
               Step 02
             </span>
-            <span className="px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
+            <span className="badge-action px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
               Edit
             </span>
           </div>
 
-          <div className="absolute bottom-8 left-8 right-8">
+          <div className="absolute bottom-8 left-8 right-8 card-content">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">AI Auto-Layout</h3>
             <p className="text-gray-300 text-sm md:text-base leading-relaxed">
               Let our AI editor auto-arrange your moments into a perfect layout in seconds.
@@ -131,7 +131,7 @@ export const Programs: React.FC = () => {
         {/* Step 3 */}
         <div
           ref={el => { if (el) cardsRef.current[2] = el; }}
-          className="relative group overflow-hidden rounded-[1.6rem] bg-gray-900 shadow-xl transition-all duration-500 hover:shadow-2xl h-[500px]"
+          className="relative group overflow-hidden rounded-[1.6rem] bg-gray-900 shadow-xl transition-all duration-500 hover:shadow-2xl h-[500px] step-card"
         >
           <img
             src="/step3_order.png"
@@ -141,15 +141,15 @@ export const Programs: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
           <div className="absolute top-6 left-6 flex gap-2.5">
-            <span className="px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
+            <span className="badge-step px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
               Step 03
             </span>
-            <span className="px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
+            <span className="badge-action px-6 py-3 rounded-full border border-white/30 text-white bg-black/20 backdrop-blur-md transition-all text-base font-medium uppercase tracking-wider hover:bg-white/20 hover:border-white shadow-sm cursor-default">
               Order
             </span>
           </div>
 
-          <div className="absolute bottom-8 left-8 right-8">
+          <div className="absolute bottom-8 left-8 right-8 card-content">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">Delivered to Your Doorstep</h3>
             <p className="text-gray-300 text-sm md:text-base leading-relaxed">
               Place your order and receive your premium photobook safely packaged in a rigid keepsake box.
