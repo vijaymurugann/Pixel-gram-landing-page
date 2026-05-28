@@ -92,7 +92,7 @@ export const Specs: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 items-start">
         <h2 className="lg:col-span-8 text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight text-neutral-900 leading-[1.1]">
           Crafted for Quality, <br />
-          Built for <span className="text-seerakku-yellow font-bold italic">Your Memories</span>
+          Built for <span className="text-seerakku-yellow font-bold">Your Memories</span>
         </h2>
         <p className="lg:col-span-4 text-gray-500 text-lg leading-relaxed lg:pt-4">
           Every photo book uses fine-art museum materials and is made to outlive a lifetime, designed seamlessly directly from your phone.
