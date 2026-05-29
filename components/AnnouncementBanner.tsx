@@ -14,12 +14,12 @@ const offers: Offer[] = [
     icon: Truck
   },
   {
-    text: "Buy 3 get 1 free",
+    text: "Buy 3 Get 1 Free",
     badge: "LIMITED OFFER",
     icon: Gift
   },
   {
-    text: "starts from 2999rs",
+    text: "Starts from ₹2,999",
     badge: "INTRO PRICE",
     icon: Sparkles
   }
