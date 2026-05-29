@@ -10,17 +10,17 @@ interface Offer {
 const offers: Offer[] = [
   {
     text: "Free shipping on all orders",
-    badge: "FREE",
+    // badge: "FREE",
     icon: Truck
   },
   {
     text: "Buy 3 Get 1 Free",
-    badge: "LIMITED OFFER",
+    // badge: "LIMITED OFFER",
     icon: Gift
   },
   {
-    text: "Starts from ₹2,999",
-    badge: "INTRO PRICE",
+    text: "Starts from ₹3,499",
+    // badge: "INTRO PRICE",
     icon: Sparkles
   }
 ];
@@ -45,7 +45,6 @@ export const AnnouncementBanner: React.FC = () => {
               </span>
             )}
             {/* Visual Separator */}
-            <span className="ml-8 text-white/50 font-light">•</span>
           </div>
         );
       })}

@@ -43,7 +43,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
 
           {/* Description */}
           <p className="text-gray-200 text-lg md:text-xl mb-10 max-w-xl font-light leading-relaxed border-l-4 border-seerakku-yellow pl-4">
-            Turn your phone's camera roll into a premium layflat photobooks in minutes, no designer needed.
+            Turn your phone's camera roll into a premium layflat photobook in minutes, no designer needed.
           </p>
 
           {/* CTA Button */}
@@ -51,7 +51,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
             onClick={onCtaClick}
             className="group flex items-center gap-4 pl-6 pr-2 py-2 bg-white hover:bg-neutral-50 rounded-full transition-all duration-300 shadow-[0_4px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_40px_rgba(0,0,0,0.4)] border border-white/20 hover:scale-[1.02]"
           >
-            <span className="bg-gradient-to-r from-[#c91f8d] to-[#dd4fa9] bg-clip-text text-transparent text-md font-bold tracking-wide">Create your book now.</span>
+            <span className="bg-gradient-to-r from-[#c91f8d] to-[#dd4fa9] bg-clip-text text-transparent text-md font-bold tracking-wide">Craft Your Book</span>
             <div className="w-10 h-10 bg-gradient-to-br from-[#c91f8d] to-[#dd4fa9] rounded-full flex items-center justify-center group-hover:rotate-45 transition-transform duration-300 shadow-sm">
               <ArrowUpRight className="w-5 h-5 text-white" />
             </div>
