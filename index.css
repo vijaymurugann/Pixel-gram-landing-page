@@ -25,9 +25,12 @@ html {
   font-size: 12px !important; /* Original size of text-xs: 0.75rem = 12px */
 }
 
-.hero-font-reset .text-base,
-.hero-font-reset button span {
+.hero-font-reset .text-base {
   font-size: 16px !important; /* Original size of text-base: 1rem = 16px */
+}
+
+.hero-font-reset button span {
+  font-size: clamp(14px, 1.5vw, 16px) !important;
 }
 
 html.lenis, html.lenis body {
